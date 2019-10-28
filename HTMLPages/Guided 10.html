@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guided 10</title>
+    <style>
+        .div1{
+            height: 40px;
+            width: 70%;
+            background: black;
+            margin: 50px auto;
+            border-radius:5px;
+            
+            animation-name: changes-colors;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes changes-colors{
+            0%{
+                background-color: blue;
+            }
+            50%{
+                background-color: green;
+            }
+            100%{
+                background-color: yellow;
+            }
+        }
+        .ball {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            position: relative;
+            border-radius: 50%;
+            background: liner-gradient (35deg, #ccffff, #ffcccc);
+            
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bounce{
+            0%{
+                top: 0px;
+            }
+            50%{
+                top: 250px;
+                width: 130px;
+                height: 70px;
+            }
+            100%{
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href=../index.html>Home</a>
+    <a href="Lab%209-1.html">9-1</a>
+<div class="div1"></div>
+<div class="ball"></div>
+</body>
+</html>
