@@ -4,20 +4,47 @@
 <meta charset="utf-8">
 <title>Lesson 1</title>
     <style>
+        .pokemon-type{
+            display:flex;
+            flex-direction: row;
+        }
+        #searchInput{
+            width: 100%;
+            padding: 10px 5px 18px 5px;
+            border: none;
+            background-color: rgba(0,0,0,0.2);
+            color: white;
+            font-family:'roboto';
+            font-size: 15px;
+        }
+        ::placeholder{
+            color: white;
+        }
+        body > div{
+            max-width: 300px;
+            margin: auto;
+        }
         .grass{
            background-color: #DEFDE0;
             display: flex;
             flex-direction: column;
             padding: 20px;
             margin-top: 10px;
-            margin-left: 10px;  
+            margin-left: 10px; 
+            width: 120px;
+            height: 220px;
         }
-        .pokemon-card grass{
-            display: flex;
-            flex-direction: column;
-        }
+        
         .fire{
            background-color: #FDDFDF;
+              display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-top: 10px;
+            margin-left: 10px; 
+            width: 120px;
+            height: 220px;
+        }
         }
         .electric{
             background-color: #FCF7DE;
@@ -56,16 +83,22 @@
             background-color: #66ccff;
         }
         .img-container{
-            shape-outside: circle();
             background-color: rgba(255,255,255,0.6);
             height: 120px;
             width: 120px;
             margin-top: 30px;
         }
         .number{
-            font-size: 15px;
+            font-size: 10px;
             region-break-after: (0,0,0,0.1);
             padding: 5px 10px 5px 10px;
+        }
+        .name{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .type{
+            font-size: 5px;
         }
     </style>
 </head>
@@ -75,12 +108,44 @@
 <h1>Pokemon Search</h1>
     <div><input type="text" id="searchInput" onkeyup="filterResults()" placeholder="Search pokemon name or type".></div>
     
-    <section>
+    <section class="pokemon-type">
     <div class="pokemon-card grass">
-        <div class="img-container"><img src="../Images/1-bulbasaur-grass.png" class="img-container"><div class="number">#001</div>
+        <div class="img-container"><img src="../Images/1-bulbasaur-grass.png" class="img-container"><div class="number">#001</div><div class="name">Bulbasaur</div><div class=".type">Type: Grass</div>
        </div>
         </div>
-    </section> 
+   
+    <div class="pokemon-card grass">
+        <div class="img-container"><img src="../Images/2-ivsaur-grass.png"class="img-container"><div class="number">#002</div><div class="name">Ivsuar</div><div class=".type">Type: Grass</div>
+       </div>
+        </div>
+        
+        <div class="pokemon-card grass">
+        <div class="img-container"><img src="../Images/3-venusaur-grass.png"class="img-container"><div class="number">#003</div><div class="name">Venusaur</div><div class=".type">Type: Grass</div>
+       </div>
+            </div>
+         </section>
+    <section class="pokemon-type">
+            <div class="pokemon-card fire">
+        <div class="img-container"><img src="../Images/4-charmander-fire.png"class="img-container"><div class="number">#004</div><div class="name">Charmander</div><div class=".type">Type: Fire</div>
+       </div>
+        </div>
+         <div class="pokemon-card fire">
+        <div class="img-container"><img src="../Images/5-charmeleon-fire.png"class="img-container"><div class="number">#005</div><div class="name">Charmeleom</div><div class=".type">Type: Fire</div>
+       </div>
+        </div>
+         <div class="pokemon-card fire">
+        <div class="img-container"><img src="../Images/6-charizard-fire.png"class="img-container"><div class="number">#006</div><div class="name">Charizard</div><div class=".type">Type: Fire</div>
+       </div>
+        </div>
+        </section>
+
+    <section class="pokemon-type">
+    <div class="pokemon-card water">
+        <div class="img-container"><img src="../Images/7-squirtle-water.png" class="img-container"><div class="number">#007</div><div class="name">Squirtle</div><div class=".type">Type: Water</div>
+       </div>
+        </div>
+    
+    </section>
     
   
   
