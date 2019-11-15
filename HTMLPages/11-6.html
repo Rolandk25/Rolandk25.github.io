@@ -10,8 +10,11 @@
             flex-direction: column;
             padding: 20px;
             margin-top: 10px;
-            margin-left: 10px;
-            
+            margin-left: 10px;  
+        }
+        .pokemon-card grass{
+            display: flex;
+            flex-direction: column;
         }
         .fire{
            background-color: #FDDFDF;
@@ -53,10 +56,16 @@
             background-color: #66ccff;
         }
         .img-container{
-            shape-outside: circle()
+            shape-outside: circle();
             background-color: rgba(255,255,255,0.6);
             height: 120px;
             width: 120px;
+            margin-top: 30px;
+        }
+        .number{
+            font-size: 15px;
+            region-break-after: (0,0,0,0.1);
+            padding: 5px 10px 5px 10px;
         }
     </style>
 </head>
@@ -67,8 +76,11 @@
     <div><input type="text" id="searchInput" onkeyup="filterResults()" placeholder="Search pokemon name or type".></div>
     
     <section>
-        <div class="pokemon-card grass"> <div class="img-container"><img src="../Images/1-bulbasaur-grass.png" class="img-container"><img src="../Images/2-ivsaur-grass.png" class="img-container"></div>
-   </div> </section>
+    <div class="pokemon-card grass">
+        <div class="img-container"><img src="../Images/1-bulbasaur-grass.png" class="img-container"><div class="number">#001</div>
+       </div>
+        </div>
+    </section> 
     
   
   
